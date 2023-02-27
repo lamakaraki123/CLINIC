@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins';
+    color: black;
+}
+
+body{
+    background-image: url(clinicin.jpg);
+}
+.container{
+    background-color: #eee;
+    color: white;
+    width: 30%;
+    height: fit-content;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+}
+
+.tittle{
+    position: absolute;
+    font-size: 40px;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%,-50%);
+}
+.tittle > span{
+    color: white;
+}
+.red{
+    color: red;
+}
+.login-sec{
+    display: inline-block;
+    padding: 12px;
+}
+
+
+.supacc-sec{
+    display: none;
+    padding: 12px;
+}
+.sud{
+    display: none;
+    padding: 12px;
+}
+.useroption{
+    display: none;
+    padding: 12px;
+    position: relative;
+    left: 40%;
+    top: 35%;
+    
+}
+.super{
+    display: none;
+    padding: 12px;
+}
+fieldset{
+    border: none;
+}
+label{
+    font-weight: bolder;
+    
+    font-size: 18px;
+}

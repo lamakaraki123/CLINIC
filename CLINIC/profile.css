@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins';
+}
+
+html{
+    background-color: rgb(50, 125, 131);
+}
+
+.view{
+    display: flex;
+    justify-content: space-around;
+}
+#profile-sec{
+    margin-top: 80px;
+    width: 45%;
+    background-color: white;
+    border-radius: 20px;
+    padding-top: 40px;
+}
+#profile-sec legend{
+    position: absolute;
+    top:55px;
+    left: 25%;
+    transform: translate(-50%);
+    z-index:3;
+    background-color: rgb(50, 125, 131);
+}
+
+legend{
+    font-size: x-large;
+    color: white;
+    text-shadow: 1px 0px 1px;
+    padding: 15px;
+    border-radius: 20px;
+    border-top: 10px solid white;
+}
+#portfolio-sec{
+    margin-top: 80px;
+    width: 45%;
+    background-color: white;
+    border-radius: 20px;
+    padding-top: 40px;
+}
+#portfolio-sec legend{
+    position: absolute;
+    top:55px;
+    left: 75%;
+    transform: translate(-50%);
+    z-index:3;
+    background-color: rgb(50, 125, 131);
+}
+.spanmy{
+    opacity: 0.5;
+}
+.profile-f{
+    padding: 20px;
+}
+.port-f{
+    padding: 20px;
+}
+.profile-f table tr td{
+    padding: 10px;
+}
+.profile-f table tr td label{
+    font-weight: bolder;
+    font-size: 19px;
+}
+.port-f table tr td{
+    padding: 10px;
+}
+.port-f table tr td label{
+    font-weight: bolder;
+    font-size: 19px;
+}
+fieldset{
+    border-radius: 20px;
+    height: 70%;
+    border: none;
+}

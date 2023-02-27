@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+
+* {
+    font-family: 'Poppins';
+}
+body{
+    background-color: rgb(50, 125, 131) ;
+}
+.main{
+    color: white;
+    
+}
+.red-span{
+    color: red;
+}
+.profile{
+    position: relative;
+    height: 14%;
+    width: 20%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.profile-image{
+    background-image: url("profile.png");
+    background-position: center;
+    background-size: cover;
+    width: 130px;
+    height: 100%;
+    border-radius: 50%; 
+    background-color: gainsboro;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+.logout-sec{
+    position: relative;
+    display: inline-block;
+    height: 130px;
+    width: 13%;
+    margin-left: 15px;
+}
+
+.profile-control{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    width: 400%;
+    height: 20%;
+    position: relative;
+}
+
+.profile-control > i{
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+/* CSS for main navigation section */
+.menu{
+    height: 73%;
+    width: 101%;
+    background-color: rgb(10, 36, 59);
+}
+.main-nav{
+    font-size: x-large;
+    height: 7%;
+    padding-left: 20px;
+    padding-top: 10px;
+    background-color: rgb(74, 92, 111);
+    color: white;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    width: 18.5%;
+    height: 99.5%;
+    border-right: 7px solid lightskyblue;
+}
+.control-center{
+    display: list-item;
+    height: 70vh;
+}
+.control-center > button , .dropbtn{
+    color:white;
+    filter: opacity(0.3);
+    width: 100%;
+    height: 10%;
+    background-color: transparent;
+    font-size: large;
+    text-transform: uppercase;
+    border: 0px;
+    cursor: pointer;
+}
+.control-center > button:hover{
+    filter: opacity(1);
+    text-shadow: 0px 0px 3px  white;
+    transition: 0.4s;
+}
+
+.control-center > button >i{
+    padding-right: 8px;
+}
+
+#nameselect{
+    visibility: hidden;
+}
+
+#dateselect{
+    visibility: hidden;
+}
+
+/* end css main navigation section */
+
+/* css for gridview */
+
+.grid-view{
+    position: absolute;
+    top: 10%;
+    right: 1.5%;
+    height: 90%;
+    width: 78%; 
+    border-radius: 10px;
+    background-color: white;
+    z-index: 100;
+    overflow-y: scroll;
+}
+
+label{
+    font-weight: bold;
+}
+table{
+    padding: 14px;
+}
+
+
+.add-sec{
+    padding: 25px;
+    border-radius: 25px;
+    margin: 20px;
+    color: rgb(10, 36, 59);
+}
+
+.app-sec{
+    border-radius: 30px;
+    padding: 25px;
+    margin: 20px;
+    color: rgb(10, 36, 59);
+    display: none;
+}
+fieldset{
+    width: 50%;
+    border: 2px solid rgb(10, 36, 59);
+    border-radius: 20px;
+    height: fit-content;
+}
+legend{
+    border-radius: 20px;
+    font-weight:bold;
+    font-size:large;
+}
+#patientinfo{
+    display: none;
+    margin-top: 30px;
+    
+}
+
+#doctorinfo{
+    display: none;
+    margin-top: 30px;
+    
+}
+#doctor-sec{
+    display: none;
+    margin: 20px;
+    padding: 25px;
+    
+}
+
+#patient-sec{
+    display: none;
+    margin: 20px;
+    padding: 25px;
+    
+}
+#fees-sec{
+    display: none;
+    margin: 20px;
+    padding: 25px;
+}
+
+#visit-sec{
+    display: none;
+    margin: 20px;
+    padding: 25px;
+}
+/* end css gridview section */
+/* Dropdown Button */
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus , .btn-span:hover {
+    color: white;
+    filter: opacity(1);
+    text-shadow: 0px 0px 4px white;
+    transition: 0.4s;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    display: none;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 240px;
+    top: -40px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 101;
+    font-size: medium;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content button {
+    background-color: rgb(14, 44, 70);
+    color:white;
+    border: none;
+    width: 100%;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .btn-span{
+    filter: opacity(0.4);
+    cursor: pointer;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+/* end of dropdown list */
+
+/* account droplist */
+.accdrop{
+    display: list-item;
+    list-style: none;
+    position: absolute;
+    top: 36%;
+    left: 13%;
+    width: 8%;
+    height: 10%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 105;
+}
+
+.accdrop > button{
+    color: #ddd;
+    background-color:  rgb(14, 44, 70) ;
+    border: none;
+    height: 50%;
+    font-size: 15px;
+}
+
+#macc-sec{
+    display: none;
+}
+
+#accview-sec{
+    display: none;
+}
+
+/* end droplist */

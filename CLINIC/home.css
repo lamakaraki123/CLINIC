@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+*{
+    font-family: 'Poppins';
+}
+.appdrop{
+    display: list-item;    
+    flex-direction: column;
+    position: fixed;
+    left: 9%;
+    text-align: center;
+}
+
+.home{
+    background-image: url("surgeon.jpg");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 4px solid white;
+}
+
+.appalert{
+    position: absolute;
+    display: block;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 30%;
+    width: 30%;
+    background-image: url("clinicin.jpg");
+    z-index: 10000;
+}
+.bcon{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%);
+    
+}
+.alertb{
+position: absolute;
+right: 10px;
+}
+.alertb:hover{
+    background-color: red;
+    }
+.alerttext{
+    font-size: large;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+#evo{
+    color: greenyellow;
+}
+.drm:hover{
+    color: greenyellow;
+    text-shadow: 0px 0px 3px greenyellow;
+}
+.dr:hover{
+    color: greenyellow;
+    text-shadow: 0px 0px 3px greenyellow;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 55%;
+    list-style: none;
+    padding-top: 9px;
+}
+.nav ul li{
+    margin: 15px;
+}
+.nav ul li a{
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;  
+    font-weight: bold;  
+    transition-duration: 0.2s;
+    transition-timing-function:linear;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+.nav ul li a:hover {
+    color: greenyellow;
+    text-shadow: 0px 0px 3px greenyellow;
+}
+
+
+
+.logo{
+    color: white;
+    font-size: x-large;
+    border: 3px solid white;
+    width: fit-content;
+    height: fit-content;
+    padding: 3px;
+    position: absolute;
+    left: 70px;
+    top: 12px;
+    font-weight: bold;
+} 
+
+.x{
+    color: rgb(177, 31, 31);
+    font-weight: bold;
+    margin-left:4px;
+}
+
+.l1{
+    color: white;
+    background-color: rgb(177, 31, 31);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: fit-content;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.l2{
+    color: white;
+    font-size: 50px;
+    font-weight: 200;
+}
+.l3{
+    color: white;
+    font-size: 50px;
+    font-weight:bolder;
+}
+
+.par{
+    position: absolute;
+    left: 20%;
+    top: 30%;
+}
+.same{
+    line-height: 2px;
+    letter-spacing: 5px;
+}
+
+.socialmedia{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 30%;
+    position: absolute;
+    left: 65%;
+    top: 35%;
+}
+svg{
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    color: white;
+    margin: 8px;
+}
+#slink{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+td svg{
+    width: 25px;
+}
+
+.apphours{
+    height: 550px;
+}
+.secflex{
+    display: flex;
+    justify-content: space-between;
+}
+.contact{
+    position: relative;
+    background-image: url("p2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#d1{
+    position: relative;
+    filter: saturate(100%);
+    height: 380px;
+    width: 100%;
+}
+#d2{
+    position: relative;
+    filter: saturate(60%);
+    border: 2px solid white;
+    height: 550px;
+    width: 50%;
+    background-image: url("p1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#d3{
+    position: relative;
+    filter: saturate(40%);
+    border: 2px solid white;
+    height: 550px;
+    width: 50%;
+    background-image: url("p5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+#top{
+    color: white;
+    font-size: xx-large;
+    opacity: 0.5;
+}
+#bot{
+    color: white;
+    font-size: xx-large;
+}
+.dtitle{
+    text-align: center;
+    padding-top: 30px;
+}
+.tablecontacts{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 600px;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    font-weight: 400;
+    line-height: 60px;
+}
+.tablecontacts td{
+    border-top: 3px solid white;
+}
+#tdbot{
+    border-bottom: 3px solid white;
+}
+.tableapp {
+   position: absolute;
+   top: 60%;
+   left: 50%;
+   transform: translate(-50% ,-50%);
+height: 80%;
+}
+.tableapp tr td input{
+    height: 40%;
+    background-color: transparent;
+    width: 200px;
+    border: 1px solid white;
+    color: white;
+    padding-left: 8px;
+    font-size: medium;
+}
+
+::placeholder{
+    color: white;
+    font-weight: bold;
+}
+.tableapp tr td {
+    padding: 10px;
+}
+#subbtn{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.tablehours tr{
+    color: white;
+    font-weight: bold;
+}
+.tablehours tr td{
+    width: 400px;
+    height: 60px;
+    text-align: center;
+    border-top: 2px solid white;
+    letter-spacing: 1px;
+}
+.tablehours{
+    width: 90%;
+    height: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.doctors{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 65%;
+    width: 100%;
+    background-image: url("clinicin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 4px solid white ;
+    border-bottom: 4px solid white;
+}
+
+.doctitle{
+    text-align: center;
+    position: absolute;
+    left: 30%;
+    top: 20px;
+}
+.card{
+    float: right;
+    margin-top: 140px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.cardsgroup{
+    position: absolute;
+    left: 10px;
+}
+.card img{
+    width: 100%;
+    height: 200px;
+}
+#more{
+    width: 120px;
+    height: 45px;
+    position: absolute;
+    left: 30%;
+    top: 85%;
+    background-color: rgb(0, 140, 140);
+}
+#more a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold ;
+}
+.doctorpic{
+    position: absolute;
+    top: 6%;
+    left: 67%;
+}
+.doctorpic img{
+    height: 75%;
+}
+
+
+.aboutus{
+    position: relative;
+    padding: 20px;
+    background-color: #222;
+    color:aqua;
+    text-align: center;
+    height: fit-content;
+}
+.aboutp{
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 66%;
+    transform: translate(-50%,-50%);
+}
+h6{
+    color: white;
+    font-size: 15px;
+    position: relative;
+    left: 75%;
+    bottom: 35px;
+}
+/* sliding effect */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.animated-title {
+  color: #222;
+  font-family: Roboto, Arial, sans-serif;
+  height: 500px;
+  left: 20%;
+  position: absolute;
+  top: 25%;
+  width: 400px;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+/* medical center text */
+.animated-title > div div {
+  font-size: 30px;
+  padding: 9px 13px 9px 13px ;
+  position: absolute;
+}
+
+/* white line */
+.animated-title > div.text-top {
+  border-bottom: 0.7vmin solid white;
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s ;
+  animation-delay: 1.4s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
+
+/* end of text animation */
+
+.classinfo{
+    display: inline-block;
+}
+
+/*  new css */
+#timeselect {
+    color: black;
+}
